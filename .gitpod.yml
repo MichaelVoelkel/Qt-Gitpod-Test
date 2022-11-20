@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Setup
+    command: mkdir build && cd build && cmake -DCMAKE_PREFIX_PATH=/usr/local/Qt-6.3.2 ..
+
+ports:
+  - port: 5900
