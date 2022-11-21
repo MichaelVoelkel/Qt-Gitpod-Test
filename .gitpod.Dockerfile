@@ -5,7 +5,7 @@ ARG BUILDPLATFORM
 RUN echo "Running on $BUILDPLATFORM, building for $TARGETPLATFORM"
 
 RUN apt-get -y update && apt-get install -y
-RUN apt-get -y install g++-11 cma˝ke git file g++-11 ninja-build build-essential libgl1-mesa-dev default-jre libglvnd-dev
+RUN apt-get -y install g++-11 cmake git file g++-11 ninja-build build-essential libgl1-mesa-dev default-jre libglvnd-dev
 RUN apt-get -y install netcat curl
 
 # link system fonts to Qt
